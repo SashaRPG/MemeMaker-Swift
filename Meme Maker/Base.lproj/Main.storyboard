@@ -15,50 +15,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yk7-5A-NTe">
-                                <rect key="frame" x="87" y="111" width="236" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="🕶"/>
-                                    <segment title="💥"/>
-                                    <segment title="💖"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xu-Mf-UCG">
-                                <rect key="frame" x="147" y="193" width="116" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="monkey-1103141_1920" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Av-MgB">
-                                <rect key="frame" x="87" y="293" width="240" height="230"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="DuU-8q-uI3"/>
-                                    <constraint firstAttribute="width" secondItem="Svs-Av-MgB" secondAttribute="height" multiplier="24:23" id="VFa-Gg-7Od"/>
-                                    <constraint firstAttribute="height" constant="250" id="xfF-2E-lKI"/>
-                                </constraints>
-                            </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wkp-da-No4">
-                                <rect key="frame" x="87" y="734" width="236" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="😼"/>
-                                    <segment title="🐕"/>
-                                    <segment title="🐒"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bottom caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-xT-LU9">
-                                <rect key="frame" x="132" y="603" width="151" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="zVM-k9-FeL">
+                                <rect key="frame" x="76.5" y="83.5" width="261" height="729"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yk7-5A-NTe">
+                                        <rect key="frame" x="74" y="0.0" width="113" height="32"/>
+                                        <segments>
+                                            <segment title="🕶"/>
+                                            <segment title="💥"/>
+                                            <segment title="💖"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="XpR-9W-XBr"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Caption Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xu-Mf-UCG">
+                                        <rect key="frame" x="61.5" y="125" width="138.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey-1103141_1920" translatesAutoresizingMaskIntoConstraints="NO" id="Svs-Av-MgB">
+                                        <rect key="frame" x="0.0" y="239.5" width="261" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="DuU-8q-uI3"/>
+                                            <constraint firstAttribute="width" secondItem="Svs-Av-MgB" secondAttribute="height" multiplier="24:23" id="VFa-Gg-7Od"/>
+                                            <constraint firstAttribute="height" constant="250" id="xfF-2E-lKI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Caption Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-xT-LU9">
+                                        <rect key="frame" x="47.5" y="583.5" width="166" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wkp-da-No4">
+                                        <rect key="frame" x="74" y="698" width="113" height="32"/>
+                                        <segments>
+                                            <segment title="😼"/>
+                                            <segment title="🐕"/>
+                                            <segment title="🐒"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="auR-Ld-WK3"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zVM-k9-FeL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0zl-J6-B8S"/>
+                            <constraint firstItem="zVM-k9-FeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUZ-wv-dCL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomCaptionSegmentedControl" destination="Wkp-da-No4" id="lc3-Z5-wr3"/>
+                        <outlet property="topCaptionSegmentedControl" destination="Yk7-5A-NTe" id="Fft-57-jLj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBOutlet weak var topCaptionSegmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var bottomCaptionSegmentedControl: UISegmentedControl!
+    @IBAction func segmentedControls(_ sender: Any) {
+    }
+    
 }
 
