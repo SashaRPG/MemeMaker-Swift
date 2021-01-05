@@ -11,4 +11,5 @@ import Foundation
 struct CaptionChoice{
     var emoji : String;
     var caption : String;
+    var imageName : String;
 }

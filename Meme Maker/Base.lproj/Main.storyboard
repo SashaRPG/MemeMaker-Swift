@@ -26,7 +26,7 @@
                                             <segment title="💖"/>
                                         </segments>
                                         <connections>
-                                            <action selector="segmentedControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="XpR-9W-XBr"/>
+                                            <action selector="topChoiceControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rix-lS-7PI"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Caption Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xu-Mf-UCG">
@@ -57,7 +57,7 @@
                                             <segment title="🐒"/>
                                         </segments>
                                         <connections>
-                                            <action selector="segmentedControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="auR-Ld-WK3"/>
+                                            <action selector="bottomChoiceControls:" destination="BYZ-38-t0r" eventType="valueChanged" id="4jv-VD-c9N"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
@@ -71,7 +71,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomCaptionLabel" destination="oS9-xT-LU9" id="0Rl-1a-3Fe"/>
                         <outlet property="bottomCaptionSegmentedControl" destination="Wkp-da-No4" id="lc3-Z5-wr3"/>
+                        <outlet property="mainImageView" destination="Svs-Av-MgB" id="4t9-sO-6IH"/>
+                        <outlet property="topCaptionLabel" destination="5xu-Mf-UCG" id="MJ2-yK-XHO"/>
                         <outlet property="topCaptionSegmentedControl" destination="Yk7-5A-NTe" id="Fft-57-jLj"/>
                     </connections>
                 </viewController>
